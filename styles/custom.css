@@ -1,0 +1,50 @@
+#socialmedia {
+    display: block;    
+    width: 30px;
+    height: 30px;
+    background: url('../styles/images/MyTunes_sprite.svg') no-repeat; /* img verdwijnt bij background-image */
+    overflow: hidden;
+    text-indent: -9999px; /* link verdwijnt bij text-indent */
+}
+
+#socialmedia a.facebook {
+    content:"";
+    background-position: -40px 0px; /* img verplaatst niet bij veranderen position. soms verplaats heel block */
+}
+
+    #socialmedia a.facebook:hover {
+
+    }
+
+#socialmedia a.twitter {
+    background-position: -60px 0px;
+}
+
+.btn {
+    margin: 10px;
+}
+
+.card .card-body { /* dropdowns over tekst laten komen. */
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+
+
+/*dit stukje code vanuit bootstrap 4 altijd onderaan in je css plaatsen */
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
