@@ -1,33 +1,31 @@
-#socialmedia {
-    display: block;    
-    width: 30px;
-    height: 30px;
-    background: url('../styles/images/MyTunes_sprite.svg') no-repeat; /* img verdwijnt bij background-image */
-    overflow: hidden;
-    text-indent: -9999px; /* link verdwijnt bij text-indent */
+ body   {
+    background-color: #917D74;
 }
 
-#socialmedia a.facebook {
-    content:"";
-    background-position: -40px 0px; /* img verplaatst niet bij veranderen position. soms verplaats heel block */
+h1 {
+    font-family: 'Maskoolin', sans-serif;
+    font-size: 32px;
 }
 
-    #socialmedia a.facebook:hover {
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+}
 
-    }
+.album-titel {
+    background: red;
 
-#socialmedia a.twitter {
-    background-position: -60px 0px;
 }
 
 .btn {
-    margin: 10px;
+    background: none;
+    border: none;
+    clear: both;
 }
 
-.card .card-body { /* dropdowns over tekst laten komen. */
-    display: block;
-    position: absolute;
-    z-index: 1;
+.btn:hover {
+    background:  none;
+    color: red;
 }
 
 
