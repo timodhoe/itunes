@@ -1,34 +1,110 @@
  body   {
-    background-color: #917D74;
+    background-color: #F1EDEC;
+}
+
+#logo {
+    padding-left: -20%
+}
+
+ol li {
+    text-indent: -20px;
+}
+
+.bands {
+    padding-top: 2rem;
 }
 
 h1 {
     font-family: 'Maskoolin', sans-serif;
-    font-size: 32px;
+    font-size: 24px;
 }
 
-h2 {
+h2{
     font-family: 'Roboto Slab', serif;
     font-size: 16px;
+    line-height: 1em;
 }
 
-.album-titel {
-    background: red;
+h2 a {
+    color: #917D74;
+    text-decoration: underline;
+}
 
+a {
+    color: #F1EDEC;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #917D74;
+}
+
+a:active {
+    border: none;
 }
 
 .btn {
     background: none;
     border: none;
     clear: both;
+    flex-grow: 1;
+    padding: 0;
+}
+
+.btn-primary {
+    color: #917D74;
+}
+
+.btn-primary:focus {
+    box-shadow: none;
 }
 
 .btn:hover {
     background:  none;
+    border: none;
     color: red;
 }
 
+.btn-lg {
+    background-color: #917D74;
+    color: #F1EDEC;
+}
 
+.btn-lg:hover {
+    background-color: #F1EDEC;
+    color: #917D74;
+    border: 1px solid #917D74;
+}
+
+.card {
+    width: 20rem;
+    background: #917D74;
+    border: none;
+}
+
+#socialmedia {
+    min-width: 20%;
+    max-width: 50%;
+}
+
+.footer {
+    color: #fff;
+    font-size: 8px;
+}
+
+.padding {
+    padding-bottom: 1rem;
+}
+
+
+/* Sprites */
+
+.sprite {
+    background-image: url('styles/images/MyTunes_sprite.svg');
+    background: no-repeat;
+    height: 30px;
+    width: 30px;
+}
 
 /*dit stukje code vanuit bootstrap 4 altijd onderaan in je css plaatsen */
 

@@ -19,7 +19,10 @@
         crossorigin="anonymous"></script>
     <!-- fonts -->
     <style>
-    @font-face { font-family: Maskoolin; src: url('styles/fonts/Maskoolin.ttf');}
+        @font-face {
+            font-family: Maskoolin;
+            src: url('styles/fonts/Maskoolin.ttf');
+        }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <!-- custom css -->
@@ -31,15 +34,16 @@
         <!-- Website header -->
         <div class="row">
             <div class="col-12 col-md-12">
-                <img src="#" alt="Mytunes' Logo">
+                <img id="logo" src="images/logo.svg" alt="Mytunes Logo">
             </div>
-
             <!-- bandalbum 1: Villains -->
-            <div class="row">
+            <div class="row bands">
                 <div class="col-5 col-md-2">
-                    <p></p><a href="http://www.qotsa.com" target="_blank">
-                        <img src="images/villains-art.png" alt="Villains Artwork" class="img-fluid rounded">
-                    </a></p>
+                    <p>
+                        <a href="http://www.qotsa.com" target="_blank">
+                            <img src="images/villains-art.png" alt="Villains Artwork" class="img-fluid">
+                        </a>
+                    </p>
                 </div>
                 <div class="col-7 col-md-2">
                     <div class="album-titel">
@@ -49,13 +53,13 @@
                             <a href="http://www.qotsa.com">Queens of the Stone Age</a>
                         </h2>
                     </div>
-                    <div class="row">
+                    <div class="row padding">
                         <!-- QOTSA tracklist -->
                         <div class="col-6 col-md-6">
                             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTracklistQueens" aria-expanded="false"
                                 aria-controls="collapseExample">Tracklist</button>
                         </div>
-                        <div class="collapse col-6" id="collapseTracklistQueens">
+                        <div class="collapse" id="collapseTracklistQueens">
                             <!-- nog kijken om vlak boven alles te brengen en centreren -->
                             <div class="card card-body">
                                 <ol>
@@ -76,7 +80,7 @@
                             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseAlbumQueens" aria-expanded="false"
                                 aria-controls="collapseExample">Album info</button>
                         </div>
-                        <div class="collapse col-12" id="collapseAlbumQueens">
+                        <div class="collapse" id="collapseAlbumQueens">
                             <div class="card card-body">
                                 Villains is the seventh studio album by American rock band Queens of the Stone Age, released on August 25, 2017 through Matador.
                                 The album was announced on June 14, with a teaser trailer taking the form of a comedy skit
@@ -95,39 +99,42 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <!-- QOTSA Bio -->
-                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseBioQueens" aria-expanded="false"
-                            aria-controls="collapseExample">Band Biography</button>
-                    </div>
-                    <div class="collapse col-12" id="collapseBioQueens">
-                        <div class="card card-body">
-                            Formed after the dissolution of Homme's previous band, Kyuss, Queens of the Stone Age developed a style of riff-oriented,
-                            heavy rock music. Their sound has since evolved to incorporate a variety of different styles
-                            and influences, including working with ZZ Top member Billy Gibbons, Nirvana drummer and Foo Fighters frontman Dave
-                            Grohl, and steady contributor Mark Lanegan.
-                            <br> members:
-                            <ul>
-                                <li>Josh Homme (lead vocals, guitar, piano)</li>
-                                <li>Troy Van Leeuwen (guitar, lap steel, keyboard, percussion, backing vocals)</li>
-                                <li>Dean Fertita (bass guitar, keyboard, backing vocals)</li>
-                                <li>Michael Shuman (keyboard, guitar, percussion, backing vocals)</li>
-                                <li>Jon Theodore (drums, percussion)</li>
-                            </ul>
+                    <div class="row padding">
+                        <div class="col-6 col-md-6">
+                            <!-- QOTSA Bio -->
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseBioQueens" aria-expanded="false"
+                                aria-controls="collapseExample">Biography</button>
+                        </div>
+                        <div class="collapse" id="collapseBioQueens">
+                            <div class="card card-body">
+                                Formed after the dissolution of Homme's previous band, Kyuss, Queens of the Stone Age developed a style of riff-oriented,
+                                heavy rock music. Their sound has since evolved to incorporate a variety of different styles
+                                and influences, including working with ZZ Top member Billy Gibbons, Nirvana drummer and Foo
+                                Fighters frontman Dave Grohl, and steady contributor Mark Lanegan.
+                                <br> members:
+                                <ul>
+                                    <li>Josh Homme (lead vocals, guitar, piano)</li>
+                                    <li>Troy Van Leeuwen (guitar, lap steel, keyboard, percussion, backing vocals)</li>
+                                    <li>Dean Fertita (bass guitar, keyboard, backing vocals)</li>
+                                    <li>Michael Shuman (keyboard, guitar, percussion, backing vocals)</li>
+                                    <li>Jon Theodore (drums, percussion)</li>
+                                </ul>
+                            </div>
                         </div>
                         <!-- QOTSA social media -->
                         <div id="socialmedia" class="col-3">
                             <!-- links met iconen __ nog kijken naar SPRITES om iconen aan te passen -->
-                            <a href="https://www.facebook.com/QOTSA/" class="facebook">Facebook</a>
+                            <a href="https://www.facebook.com/QOTSA/" class="facebook"><img src="images/facebook.svg" alt="facebook naar Queens of the Stone age"></a>
                         </div>
                         <div id="socialmedia" class="col-3">
-                            <a href="https://twitter.com/qotsa" class="twitter">Twitter</a>
+                            <a href="https://twitter.com/qotsa" class="twitter"><img src="images/twitter.svg" alt="twitter naar Queens of the Stone Age"></a>
                         </div>
+
                     </div>
-                    <div class="row">
+                    <div class="row padding">
                         <!-- CTA koop nu -->
-                        <div class="col-12 col-md-12">
-                            <button>
+                        <div class="col-12 col-md-12 d-flex justify-content-center">
+                            <button type="buttonn" class="btn btn-primary btn-lg btn-block">
                                 <a href="https://www.amazon.com/Villains-Queens-Stone-Age/dp/B071G99QQ2" target="_blank">BUY THIS</a>
                             </button>
                         </div>
@@ -136,25 +143,27 @@
 
                 <!-- bandalbum 2: Them Crooked Vultures -->
                 <div class="col-5 col-md-2">
-                    <p><a href="https://shop.themcrookedvultures.com" target="_blank">
-                        <img src="images/vultures-art.png" alt="Them Crooked Vultures Artwork" class="img-fluid">
-                    </a></p>
+                    <p>
+                        <a href="https://shop.themcrookedvultures.com" target="_blank">
+                            <img src="images/vultures-art.png" alt="Them Crooked Vultures Artwork" class="img-fluid">
+                        </a>
+                    </p>
                 </div>
                 <div class="col-7 col-md-2">
                     <div class="album-titel">
-                        <h1>Them Crooked Vultures</h1>
+                        <h1>Crooked Vultures</h1>
                         <h2>
                             <!-- link naar officiële website -->
                             <a href="https://shop.themcrookedvultures.com">Them Crooked Vultures</a>
                         </h2>
                     </div>
-                    <div class="row">
+                    <div class="row padding">
                         <!-- Them Crooked Vultures tracklist -->
                         <div class="col-6 col-md-6">
                             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTracklistVultures" aria-expanded="false"
                                 aria-controls="collapseExample">Tracklist</button>
                         </div>
-                        <div class="collapse col-6" id="collapseTracklistVultures">
+                        <div class="collapse" id="collapseTracklistVultures">
                             <div class="card card-body">
                                 <ol>
                                     <li>No One Loves Me &amp; Neither Do I</li>
@@ -202,44 +211,46 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <!-- Them Crooked Vultures Bio -->
-                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseBioVultures" aria-expanded="false"
-                            aria-controls="collapseExample">Band Biography</button>
-                    </div>
-                    <div class="collapse col-12" id="collapseBioVultures">
-                        <div class="card card-body">
-                            Them Crooked Vultures is a rock supergroup formed in Los Angeles in 2009 by John Paul Jones (former member of Led Zeppelin)
-                            on bass and keyboards, Dave Grohl (of Foo Fighters and formerly of Nirvana) on drums and backing
-                            vocals, and Josh Homme (of Queens of the Stone Age, Eagles of Death Metal and formerly of Kyuss)
-                            on guitar and vocals. The group also includes guitarist Alain Johannes during live performances.
-                            The band began recording in February 2009, and performed their first gig on August 9, 2009, in Chicago,
-                            followed by a European debut on August 19. On October 1 the group embarked on a worldwide tour
-                            titled Deserve the Future with dates going into 2010. The band's first single "New Fang" was
-                            released in October 2009, followed by the group's self-titled debut album the following month,
-                            debuting at number 12 on the Billboard200. The group won the 2011 Grammy Award for Best Hard
-                            Rock Performance for "New Fang".
-                            <br> members:
-                            <ul>
-                                <li>Josh Homme (vocals, guitars, producion)</li>
-                                <li>John Paul Jones (bass guitar, keyboards, piano, clavinet, optigan, mandolin, backing vocals,
-                                    production)
-                                </li>
-                                <li>Dave Grohl (drums, percussion, backing vocals, production)</li>
-                            </ul>
+                    <div class="row padding">
+                        <div class="col-6 col-md-6">
+                            <!-- Them Crooked Vultures Bio -->
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseBioVultures" aria-expanded="false"
+                                aria-controls="collapseExample">Biography</button>
+                        </div>
+                        <div class="collapse col-12" id="collapseBioVultures">
+                            <div class="card card-body">
+                                Them Crooked Vultures is a rock supergroup formed in Los Angeles in 2009 by John Paul Jones (former member of Led Zeppelin)
+                                on bass and keyboards, Dave Grohl (of Foo Fighters and formerly of Nirvana) on drums and
+                                backing vocals, and Josh Homme (of Queens of the Stone Age, Eagles of Death Metal and formerly
+                                of Kyuss) on guitar and vocals. The group also includes guitarist Alain Johannes during live
+                                performances. The band began recording in February 2009, and performed their first gig on
+                                August 9, 2009, in Chicago, followed by a European debut on August 19. On October 1 the group
+                                embarked on a worldwide tour titled Deserve the Future with dates going into 2010. The band's
+                                first single "New Fang" was released in October 2009, followed by the group's self-titled
+                                debut album the following month, debuting at number 12 on the Billboard200. The group won
+                                the 2011 Grammy Award for Best Hard Rock Performance for "New Fang".
+                                <br> members:
+                                <ul>
+                                    <li>Josh Homme (vocals, guitars, producion)</li>
+                                    <li>John Paul Jones (bass guitar, keyboards, piano, clavinet, optigan, mandolin, backing
+                                        vocals, production)
+                                    </li>
+                                    <li>Dave Grohl (drums, percussion, backing vocals, production)</li>
+                                </ul>
+                            </div>
                         </div>
                         <!-- Them Crooked Vultures social media -->
                         <div id="socialmedia" class="col-3">
-                            <a href="https://www.facebook.com/crookedvultures" class="facebook">Facebook</a>
+                            <a href="https://www.facebook.com/crookedvultures" class="facebook"><img src="images/facebook.svg" alt="facebook naar Them Crooked Vultures"></a>
                         </div>
                         <div id="socialmedia" class="col-3">
-                            <a href="https://twitter.com/crookedvultures" class="twitter">Twitter</a>
+                            <a href="https://twitter.com/crookedvultures" class="twitter"><img src="images/twitter.svg" alt="twitter naar Them Crooked Vultures"></a>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row padding">
                         <!-- CTA koop nu -->
-                        <div class="col-12 col-md-12">
-                            <button class="buybtn">
+                        <div class="col-12 col-md-12 d-flex justify-content-center">
+                            <button type="buttonn" class="btn btn-primary btn-lg btn-block">
                                 <a href="https://www.amazon.com/Them-Crooked-Vultures/dp/B002TUU2XE" target="_blank">BUY THIS</a>
                             </button>
                         </div>
@@ -248,9 +259,11 @@
 
                 <!-- bandalbum 3: Hush or Howl -->
                 <div class="col-5 col-md-2">
-                    <p><a href="https://blackpistolfire.com">
-                    <img src="images/blackpistol-art.png" alt="Hush or Howl Artwork" class="img-fluid"></a>
-                </p>
+                    <p>
+                        <a href="https://blackpistolfire.com">
+                            <img src="images/blackpistol-art.png" alt="Hush or Howl Artwork" class="img-fluid">
+                        </a>
+                    </p>
                 </div>
                 <div class="col-7 col-md-2">
                     <div class="album-titel">
@@ -260,7 +273,7 @@
                             <a href="https://blackpistolfire.com">Black Pistol Fire</a>
                         </h2>
                     </div>
-                    <div class="row">
+                    <div class="row padding">
                         <!-- Black Pistol Fire tracklist -->
                         <div class="col-6 col-md-6">
                             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTracklistPistol" aria-expanded="false"
@@ -309,38 +322,40 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <!-- Black Pistol Fire Bio -->
-                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseBioPistol" aria-expanded="false"
-                            aria-controls="collapseExample">Band Biography</button>
-                    </div>
-                    <div class="collapse col-12" id="collapseBioPistol">
-                        <div class="card card-body">
-                            Black Pistol Fire are a rock and roll duo originally from Toronto, Canada, that tours regularly in Austin, Texas. Their wild
-                            and energetic rock-and-roll sound has been described as a mix of classic southern rock and garage
-                            punk, garnering comparisons to early Kings of Leon, Creedence Clearwater Revival, The Black Keys,
-                            and Clutch. It’s clear that the band’s sound spans many different eras and subgenres, relying
-                            on a classic rock and roll sound that has been updated for our modern times. Recently, their
-                            valiant steed AKA Eric's car broke down, the original Dodge Neon which transported them to-and-from
-                            every show. This will be the inspiration for their upcoming European tour.
-                            <br> members:
-                            <ul>
-                                <li>Kevin McKeown (banjo, guitar, vocals)</li>
-                                <li>Eric Owen (drums, harmonica, percussion)</li>
-                            </ul>
+                    <div class="row padding">
+                        <div class="col-6 col-md-6">
+                            <!-- Black Pistol Fire Bio -->
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseBioPistol" aria-expanded="false"
+                                aria-controls="collapseExample">Biography</button>
+                        </div>
+                        <div class="collapse col-12" id="collapseBioPistol">
+                            <div class="card card-body">
+                                Black Pistol Fire are a rock and roll duo originally from Toronto, Canada, that tours regularly in Austin, Texas. Their wild
+                                and energetic rock-and-roll sound has been described as a mix of classic southern rock and garage
+                                punk, garnering comparisons to early Kings of Leon, Creedence Clearwater Revival, The Black
+                                Keys, and Clutch. It’s clear that the band’s sound spans many different eras and subgenres,
+                                relying on a classic rock and roll sound that has been updated for our modern times. Recently,
+                                their valiant steed AKA Eric's car broke down, the original Dodge Neon which transported
+                                them to-and-from every show. This will be the inspiration for their upcoming European tour.
+                                <br> members:
+                                <ul>
+                                    <li>Kevin McKeown (banjo, guitar, vocals)</li>
+                                    <li>Eric Owen (drums, harmonica, percussion)</li>
+                                </ul>
+                            </div>
                         </div>
                         <!-- Black Pistol Fire social media -->
                         <div id="socialmedia" class="col-3">
-                            <a href="https://www.facebook.com/blackpistolfire/" class="facebook">Facebook</a>
+                            <a href="https://www.facebook.com/blackpistolfire/" class="facebook"><img src="images/facebook.svg" alt="facebook naar Black Pistol Fire"></a>
                         </div>
                         <div id="socialmedia" class="col-3">
-                            <a href="https://twitter.com/blackpistolfire" class="twitter">Twitter</a>
+                            <a href="https://twitter.com/blackpistolfire" class="twitter"><img src="images/twitter.svg" alt="twitter naar Black Pistol Fire"></a>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row padding">
                         <!-- CTA koop nu -->
-                        <div class="col-12 col-md-12">
-                            <button>
+                        <div class="col-12 col-md-12 d-flex justify-content-center">
+                            <button type="buttonn" class="btn btn-primary btn-lg btn-block">
                                 <a href="https://www.amazon.com/Hush-Howl-Black-Pistol-Fire/dp/B00I89Y2NG" target="_blank">BUY THIS</a>
                             </button>
                         </div>
@@ -350,9 +365,12 @@
 
                 <!-- bandalbum 4: Elephant -->
                 <div class="col-5 col-md-2">
-                    <p><a href="http://www.whitestripes.com"><img src="images/whitestripes-art.png" alt="Elephant Artwork" class="img-fluid"></a>
+                    <p>
+                        <a href="http://www.whitestripes.com">
+                            <img src="images/whitestripes-art.png" alt="Elephant Artwork" class="img-fluid">
+                        </a>
                     </p>
-                    </div>
+                </div>
                 <div class="col-7 col-md-2">
                     <div class="album-titel">
                         <h1>Elephant</h1>
@@ -361,7 +379,7 @@
                             <a href="http://www.whitestripes.com">White Stripes</a>
                         </h2>
                     </div>
-                    <div class="row">
+                    <div class="row padding">
                         <!-- White Stripes tracklist -->
                         <div class="col-6 col-md-6">
                             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTracklistStripes" aria-expanded="false"
@@ -416,40 +434,42 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <!-- White Stripes Bio -->
-                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseBioStripes" aria-expanded="false"
-                            aria-controls="collapseExample">Band Biography</button>
-                    </div>
-                    <div class="collapse col-12" id="collapseBioStripes">
-                        <div class="card card-body">
-                            The White Stripes were an American rock duo formed in 1997 in Detroit, Michigan. The group consisted of Jack White (songwriter,
-                            vocals, guitar, piano, and mandolin) and Meg White (drums and vocals). After releasing several
-                            singles and three albums within the Detroit music scene, The White Stripes rose to prominence
-                            in 2002, as part of the garage rock revival scene. Their successful and critically acclaimed
-                            albums White Blood Cells and Elephant drew attention from a large variety of media outlets in
-                            the United States and the United Kingdom, with the single "Seven Nation Army" and its guitar
-                            line becoming their signature song. The band recorded two more albums, Get Behind Me Satan in
-                            2005 and Icky Thump in 2007, and dissolved in 2011 after a lengthy hiatus from performing and
-                            recording.
-                            <br> members:
-                            <ul>
-                                <li>Jack White (vocals, guitar, piano, mandolin</li>
-                                <li>Meg White (drums, vocals)</li>
-                            </ul>
+                    <div class="row padding">
+                        <div class="col-6 col-md-6">
+                            <!-- White Stripes Bio -->
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseBioStripes" aria-expanded="false"
+                                aria-controls="collapseExample">Biography</button>
                         </div>
-                        <!-- White Stripes social media -->
-                        <div id="socialmedia" class="col-3">
-                            <a href="https://www.facebook.com/thewhitestripes/" class="facebook">Facebook</a>
+                        <div class="collapse col-12" id="collapseBioStripes">
+                            <div class="card card-body">
+                                The White Stripes were an American rock duo formed in 1997 in Detroit, Michigan. The group consisted of Jack White (songwriter,
+                                vocals, guitar, piano, and mandolin) and Meg White (drums and vocals). After releasing several
+                                singles and three albums within the Detroit music scene, The White Stripes rose to prominence
+                                in 2002, as part of the garage rock revival scene. Their successful and critically acclaimed
+                                albums White Blood Cells and Elephant drew attention from a large variety of media outlets
+                                in the United States and the United Kingdom, with the single "Seven Nation Army" and its
+                                guitar line becoming their signature song. The band recorded two more albums, Get Behind
+                                Me Satan in 2005 and Icky Thump in 2007, and dissolved in 2011 after a lengthy hiatus from
+                                performing and recording.
+                                <br> members:
+                                <ul>
+                                    <li>Jack White (vocals, guitar, piano, mandolin</li>
+                                    <li>Meg White (drums, vocals)</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div id="socialmedia" class="col-3">
-                            <a href="https://twitter.com/whitestripesnet" class="twitter">Twitter</a>
+                            <!-- White Stripes social media -->
+                            <div id="socialmedia" class="col-3">
+                                <a href="https://www.facebook.com/thewhitestripes/" class="facebook"><img src="images/facebook.svg" alt="facebook naar White Stripes"></a>
+                            </div>
+                            <div id="socialmedia" class="col-3">
+                                <a href="https://twitter.com/whitestripesnet" class="twitter"><img src="images/twitter.svg" alt="twitter naar White Stripes"></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
+                    <div class="row padding">
                         <!-- CTA koop nu -->
-                        <div class="col-12 col-md-12">
-                            <button>
+                        <div class="col-12 col-md-12 d-flex justify-content-center">
+                            <button type="buttonn" class="btn btn-primary btn-lg btn-block">
                                 <a href="https://www.amazon.com/Elephant-White-Stripes/dp/B001AP11L6" target="_blank">BUY THIS</a>
                             </button>
                         </div>
@@ -458,9 +478,12 @@
 
                 <!-- bandalbum 5: Rumours -->
                 <div class="col-5 col-md-2">
-                    <p><a href="https://www.fleetwoodmac.com/tango"><img src="images/fleetwood-art.png" alt="Rumours Artwork" class="img-fluid"></a>
+                    <p>
+                        <a href="https://www.fleetwoodmac.com/tango">
+                            <img src="images/fleetwood-art.png" alt="Rumours Artwork" class="img-fluid">
+                        </a>
                     </p>
-                    </div>
+                </div>
                 <div class="col-7 col-md-2">
                     <div class="album-titel">
                         <h1>Rumours</h1>
@@ -469,7 +492,7 @@
                             <a href="https://www.fleetwoodmac.com/tango">Fleetwood Mac</a>
                         </h2>
                     </div>
-                    <div class="row">
+                    <div class="row padding">
                         <!-- Fleetwood Mac tracklist -->
                         <div class="col-6 col-md-6">
                             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTracklistFleetwood" aria-expanded="false"
@@ -523,40 +546,42 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <!-- Fleetwood Mac Bio -->
-                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseBioFleetwood" aria-expanded="false"
-                            aria-controls="collapseExample">Band Biography</button>
-                    </div>
-                    <div class="collapse col-12" id="collapseBioFleetwood">
-                        <div class="card card-body">
-                            Fleetwood Mac are a British-American rock band, formed in London in 1967. The band have sold more than 100 million records
-                            worldwide, making them one of the world's best-selling bands of all time. In 1998, selected members
-                            of Fleetwood Mac were inducted into the Rock and Roll Hall of Fame, and received the Brit Award for
-                            Outstanding Contribution to Music. The two most successful periods for the band were during the
-                            late 1960s British blues boom, when they were led by guitarist Peter Greenand achieved a UK number
-                            one with "Albatross";  and from 1975 to 1987, as a more pop-oriented act, featuring Christine
-                            McVie, Lindsey Buckingham and Stevie Nicks. members:
-                            <ul>
-                                <li>Lindsey Buckingham (guitars, dobro, percussion, vocals)</li>
-                                <li>Stevie Nicks (vocals)</li>
-                                <li>Christine McVie (keyboards, vocals)</li>
-                                <li>John McVie (bass guitar)</li>
-                                <li>Mick Fleetwood (drums, percussion, harpsichord)</li>
-                            </ul>
+                    <div class="row padding">
+                        <div class="col-6 col-md-6">
+                            <!-- Fleetwood Mac Bio -->
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseBioFleetwood" aria-expanded="false"
+                                aria-controls="collapseExample">Biography</button>
                         </div>
-                        <!-- Fleetwood Mac social media -->
-                        <div id="socialmedia" class="col-3">
-                            <a href="https://www.facebook.com/FleetwoodMac/" class="facebook">Facebook</a>
+                        <div class="collapse col-12" id="collapseBioFleetwood">
+                            <div class="card card-body">
+                                Fleetwood Mac are a British-American rock band, formed in London in 1967. The band have sold more than 100 million records
+                                worldwide, making them one of the world's best-selling bands of all time. In 1998, selected
+                                members of Fleetwood Mac were inducted into the Rock and Roll Hall of Fame, and received
+                                the Brit Award for Outstanding Contribution to Music. The two most successful periods for
+                                the band were during the late 1960s British blues boom, when they were led by guitarist Peter
+                                Greenand achieved a UK number one with "Albatross";  and from 1975 to 1987, as a more pop-oriented
+                                act, featuring Christine McVie, Lindsey Buckingham and Stevie Nicks. members:
+                                <ul>
+                                    <li>Lindsey Buckingham (guitars, dobro, percussion, vocals)</li>
+                                    <li>Stevie Nicks (vocals)</li>
+                                    <li>Christine McVie (keyboards, vocals)</li>
+                                    <li>John McVie (bass guitar)</li>
+                                    <li>Mick Fleetwood (drums, percussion, harpsichord)</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div id="socialmedia" class="col-3">
-                            <a href="https://twitter.com/fleetwoodmac?lang=en" class="twitter">Twitter</a>
+                            <!-- Fleetwood Mac social media -->
+                            <div id="socialmedia" class="col-3">
+                                <a href="https://www.facebook.com/FleetwoodMac/" class="facebook"><img src="images/facebook.svg" alt="facebook naar Fleetwood Mac"></a>
+                            </div>
+                            <div id="socialmedia" class="col-3">
+                                <a href="https://twitter.com/fleetwoodmac?lang=en" class="twitter"><img src="images/twitter.svg" alt="twitter naar Fleetwood Mac"></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
+                    <div class="row padding">
                         <!-- CTA koop nu -->
-                        <div class="col-12 col-md-12">
-                            <button>
+                        <div class="col-12 col-md-12 d-flex justify-content-center">
+                            <button  type="buttonn" class="btn btn-primary btn-lg btn-block">
                                 <a href="https://www.amazon.com/Rumours-FLEETWOOD-MAC/dp/B000002KGT" target="_blank">BUY THIS</a>
                             </button>
                         </div>
@@ -565,73 +590,76 @@
 
                 <!-- bandalbum 6: Achtung baby -->
                 <div class="col-5 col-md-2">
-                    <p><a href="http://www.u2.com/index/home"><img src="images/u2-art.png" alt="Achtung baby Artwork" class="img-fluid"></a>
+                    <p>
+                        <a href="http://www.u2.com/index/home">
+                            <img src="images/u2-art.png" alt="Achtung baby Artwork" class="img-fluid">
+                        </a>
                     </p>
-                    </div>
+                </div>
                 <div class="col-7 col-md-2">
                     <div class="album-titel">
                         <h1>Achtung Baby</h1>
                         <h2>
-                            <div class="row">
-                                <!-- link naar officiële website -->
-                                <a href="http://www.u2.com/index/home">U2</a>
+                            <!-- link naar officiële website -->
+                            <a href="http://www.u2.com/index/home">U2</a>
                         </h2>
                     </div>
-                        <div class="row">
-                            <!-- U2 tracklist -->
-                            <div class="col-6 col-md-6">
-                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTracklistU2" aria-expanded="false"
-                                    aria-controls="collapseExample">Tracklist</button>
-                            </div>
-                            <div class="collapse col-6" id="collapseTracklistU2">
-                                <div class="card card-body">
-                                    <ol>
-                                        <li>Zoo Station</li>
-                                        <li>Even Better Than the Real Thing</li>
-                                        <li>One</li>
-                                        <li>Until the End of the World</li>
-                                        <li>Who's Gonna Ride Your Wild Horses</li>
-                                        <li>So Cruel</li>
-                                        <li>The Fly</li>
-                                        <li>Mysterious Ways</li>
-                                        <li>Tryin' to Throw Your Arms Around the World</li>
-                                        <li>Ultraviolet (Light My Way)</li>
-                                        <li>Acrobat</li>
-                                        <li>Love is Blindness</li>
-                                    </ol>
-                                    </ol>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-6">
-                                <!-- U2 Album Info -->
-                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseAlbumU2" aria-expanded="false"
-                                    aria-controls="collapseExample">Album info</button>
-                            </div>
-                            <div class="collapse col-12" id="collapseAlbumU2">
-                                <div class="card card-body">
-                                    Achtung Baby is the seventh studio album by Irish rock band U2. It was produced by Daniel Lanois and Brian Eno, and was released
-                                    on 18 November 1991 on Island Records. Stung by criticism of their 1988 release, Rattle
-                                    and Hum, U2 shifted their musical direction to incorporate influences from alternative
-                                    rock, industrial music, and electronic dance music into their sound. Thematically, Achtung
-                                    Baby is darker, more introspective, and at times more flippant than their previous work.
-                                    The album and the subsequent multimedia-intensive Zoo TV Tour were central to the group's
-                                    1990s reinvention, by which they abandoned their earnest public image for a more lighthearted
-                                    and self-deprecating one.
-                                    <ul>
-                                        <li>Released: 18 November 1991</li>
-                                        <li>Notable single: One</li>
-                                        <li>Genre: Alternative Rock</li>
-                                        <li>Length: 55:27</li>
-                                        <li>Label: Island</li>
-                                        <li>Producer: Daniel Lanois &#8226 Brian Eno</li>
-                                        <li>Album design: Steve Averill &#8226 Shaughn McGrath</li>
-                                    </ul>
-                                </div>
+                    <div class="row padding">
+                        <!-- U2 tracklist -->
+                        <div class="col-6 col-md-6">
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseTracklistU2" aria-expanded="false"
+                                aria-controls="collapseExample">Tracklist</button>
+                        </div>
+                        <div class="collapse col-6" id="collapseTracklistU2">
+                            <div class="card card-body">
+                                <ol>
+                                    <li>Zoo Station</li>
+                                    <li>Even Better Than the Real Thing</li>
+                                    <li>One</li>
+                                    <li>Until the End of the World</li>
+                                    <li>Who's Gonna Ride Your Wild Horses</li>
+                                    <li>So Cruel</li>
+                                    <li>The Fly</li>
+                                    <li>Mysterious Ways</li>
+                                    <li>Tryin' to Throw Your Arms Around the World</li>
+                                    <li>Ultraviolet (Light My Way)</li>
+                                    <li>Acrobat</li>
+                                    <li>Love is Blindness</li>
+                                </ol>
+                                </ol>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="col-6 col-md-6">
+                            <!-- U2 Album Info -->
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseAlbumU2" aria-expanded="false"
+                                aria-controls="collapseExample">Album info</button>
+                        </div>
+                        <div class="collapse col-12" id="collapseAlbumU2">
+                            <div class="card card-body">
+                                Achtung Baby is the seventh studio album by Irish rock band U2. It was produced by Daniel Lanois and Brian Eno, and was released
+                                on 18 November 1991 on Island Records. Stung by criticism of their 1988 release, Rattle and
+                                Hum, U2 shifted their musical direction to incorporate influences from alternative rock,
+                                industrial music, and electronic dance music into their sound. Thematically, Achtung Baby is
+                                darker, more introspective, and at times more flippant than their previous work. The album
+                                and the subsequent multimedia-intensive Zoo TV Tour were central to the group's 1990s reinvention,
+                                by which they abandoned their earnest public image for a more lighthearted and self-deprecating
+                                one.
+                                <ul>
+                                    <li>Released: 18 November 1991</li>
+                                    <li>Notable single: One</li>
+                                    <li>Genre: Alternative Rock</li>
+                                    <li>Length: 55:27</li>
+                                    <li>Label: Island</li>
+                                    <li>Producer: Daniel Lanois &#8226 Brian Eno</li>
+                                    <li>Album design: Steve Averill &#8226 Shaughn McGrath</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row padding">
+                        <div class="col-6 col-md-6">
                             <!-- U2 Bio -->
-                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseBioU2" aria-expanded="false" aria-controls="collapseExample">Band Biography</button>
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseBioU2" aria-expanded="false" aria-controls="collapseExample">Biography</button>
                         </div>
                         <div class="collapse col-12" id="collapseBioU2">
                             <div class="card card-body">
@@ -647,30 +675,35 @@
                                     <li>Larry Mullen Jr. (drums, percussion)</li>
                                 </ul>
                             </div>
+                        </div>
                             <!-- U2 social media -->
                             <div id="socialmedia" class="col-3">
-                                <a href="https://www.facebook.com/u2/" class="facebook">Facebook</a>
+                                <a href="https://www.facebook.com/u2/" class="facebook"><img src="images/facebook.svg" alt="facebook naar U2"></a>
                             </div>
                             <div id="socialmedia" class="col-3">
-                                <a href="https://twitter.com/U2?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="twitter">Twitter</a>
+                                <a href="https://twitter.com/U2?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="twitter"><img src="images/twitter.svg" alt="twitter naar U2"></a>
                             </div>
                         </div>
-                        <div class="row">
-                            <!-- CTA koop nu -->
-                            <div class="col-12 col-md-12">
-                                <button>
-                                    <a href="https://www.amazon.com/Achtung-Baby-U2/dp/B000001DTM" target="_blank">BUY THIS</a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row footer">
-                        <div class="col-12 col-md-12 text-center">
-                            <p>© 2017 My Tunes is a production by Timothy D’hoe, Bruges. All Rights Reserved</p>
+                    <div class="row padding">
+                        <!-- CTA koop nu -->
+                        <div class="col-12 col-md-12 d-flex justify-content-center">
+                            <button type="buttonn" class="btn btn-primary btn-lg btn-block">
+                                <a href="https://www.amazon.com/Achtung-Baby-U2/dp/B000001DTM" target="_blank">BUY THIS</a>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row d-flex footer justify-content-center">
+            <div class="col-12 col-md-12">
+                <p>© 2017 My Tunes is a production by Timothy D’hoe, Bruges. All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
     </div>
 </body>
+
+</html>
