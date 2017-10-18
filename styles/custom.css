@@ -5,6 +5,7 @@
 #logo {
     padding-left: -40%;
     padding-bottom: 5%;
+    margin-top: -3%;
     max-width: 70%;
 }
 
@@ -66,7 +67,11 @@ a:active {
 .btn:hover {
     background:  none;
     border: none;
-    color: red;
+    color: #212529;
+}
+
+.btn:active {
+    color: #212529;
 }
 
 .btn-block {
@@ -83,7 +88,7 @@ a:active {
 }
 
 .card {
-    width: 200%;
+    max-width: 150%;
     background: #917D74;
     border: none;
     font-family: 'Roboto Slab', serif;
@@ -91,6 +96,8 @@ a:active {
     line-height: 2em;
     color: #fff;
     z-index: 9;
+    margin-left: -40%;
+    margin-top: 10px;
 }
 
 .bandimg:hover {
@@ -117,7 +124,6 @@ a:active {
     padding-bottom: 1rem;
 }
 
-
 /*dit stukje code vanuit bootstrap 4 altijd onderaan in je css plaatsen */
 
 // Extra small devices (portrait phones, less than 576px)
@@ -127,7 +133,18 @@ a:active {
 @media (min-width: 576px) { ... }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
+@media (min-width: 768px) { .card {
+    max-width: 300%;
+    background: #917D74;
+    border: none;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    line-height: 2em;
+    color: #fff;
+    z-index: 9;
+    margin-left: -40%;
+    margin-top: 10px;
+} }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { ... }
