@@ -1,4 +1,4 @@
- body   {
+body   {
     background-color: #F1EDEC;
 }
 #logo {
@@ -55,6 +55,8 @@ a:active {
     background:  none;
     border: none;
     color: #212529;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 .btn:active {
     color: #212529;
@@ -67,8 +69,10 @@ a:active {
 }
 .btn-block:hover {
     background-color: #F1EDEC;
-    color: #F7BB63;
     border: 1px solid #F7BB63;
+}
+button>a:hover {
+    color: #F7BB63;
 }
 .card {
     max-width: 150%;
