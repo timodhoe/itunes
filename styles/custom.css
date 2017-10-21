@@ -1,51 +1,41 @@
  body   {
     background-color: #F1EDEC;
 }
-
 #logo {
     padding-left: -40%;
     padding-bottom: 5%;
     margin-top: -3%;
     max-width: 70%;
 }
-
 .bands {
     padding-top: 2rem;
 }
-
 h1 {
     font-family: 'Maskoolin', sans-serif;
     font-size: 24px;
 }
-
 h2{
     font-family: 'Roboto Slab', serif;
     font-size: 16px;
     line-height: 1em;
 }
-
 h2 a {
     color: #917D74;
     text-decoration: underline;
 }
-
 a {
     color: #F1EDEC;
 }
-
 a:hover {
     text-decoration: none;
     color: #917D74;
 }
-
 a:active {
     border: none;
 }
-
 .album-titel {
     padding-bottom: 2rem;
 }
-
 .btn {
     background: none;
     border: none;
@@ -53,40 +43,33 @@ a:active {
     flex-grow: 1;
     padding: 0;
 }
-
 .btn-primary {
     font-family: 'Roboto Slab', serif;
     color: #917D74;
     padding-top: 10%px;
 }
-
 .btn-primary:focus {
     box-shadow: none;
 }
-
 .btn:hover {
     background:  none;
     border: none;
     color: #212529;
 }
-
 .btn:active {
     color: #212529;
 }
-
 .btn-block {
     background-color: #F7BB63;
     color: #F1EDEC;
     margin-top: 1.3rem;
     margin-bottom: 2rem;
 }
-
 .btn-block:hover {
     background-color: #F1EDEC;
     color: #F7BB63;
     border: 1px solid #F7BB63;
 }
-
 .card {
     max-width: 150%;
     background: #917D74;
@@ -99,7 +82,6 @@ a:active {
     margin-left: -40%;
     margin-top: 10px;
 }
-
 .bandimg:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
@@ -108,33 +90,23 @@ a:active {
     -webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
-
 #socialmedia {
     min-width: 20%;
     max-width: 50%;
 }
-
 .footer {
     background: #917D74;
     color: #fff;
     font-size: 8px;
 }
-
 .padding {
     padding-bottom: 1rem;
 }
 
-/*dit stukje code vanuit bootstrap 4 altijd onderaan in je css plaatsen */
-
-// Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { .card {
-    max-width: 300%;
+/* media queries */
+@media only screen and (min-width: 768px) {
+    .card {
+    min-width: 300px;
     background: #917D74;
     border: none;
     font-family: 'Roboto Slab', serif;
@@ -144,13 +116,9 @@ a:active {
     z-index: 9;
     margin-left: -40%;
     margin-top: 10px;
-} }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+    position: relative;
+    }
+}
 
 
 
